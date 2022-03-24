@@ -1,0 +1,15 @@
+.blipDarkMode {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Nunito Sans, Helvetica, sans-serif;
+    background-color: #3f7de8;
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+    vertical-align: middle;
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
+}

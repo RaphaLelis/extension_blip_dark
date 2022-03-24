@@ -1,11 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#btn').addEventListener('click', function() {
-        let text = document.querySelector('#texto').value;
-        document.querySelector('#result').innerHTML = upper(text);
-    })
+const interval = setInterval(() => {
+    const header = document.querySelector(".move-bots-button-container")
+    if (header) {
+        clearInterval(interval)
 
-    function upper(text) {
-        return text.toUpperCase();
+        const button = document.createElement("button")
+        button.innerHTML = "Dark Mode"
+        button.classList.add("blipDarkMode")
+
+        button.addEventListener("click", () => {
+            const pag = document.querySelector(".flex flex-column w-100")
+            pag.classList.add("darkmode")
+        })
+        header.appendChild(button)
     }
-
-})
+}, 1000)
