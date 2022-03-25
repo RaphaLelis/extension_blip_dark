@@ -13,4 +13,4 @@ const interval = setInterval(() => {
         })
         header.appendChild(button)
     }
-}, 1000)
+}, 200)
