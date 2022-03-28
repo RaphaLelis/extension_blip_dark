@@ -1,16 +1,25 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Blip Dark",
     "version": "0.1",
+    "description": "Extension to facilitate viewing of blipchat at night",
     "icons": {
         "128": "img/icondark.png"
     },
-    "content_scripts": [{
-        "matches": ["https://portal.blip.ai/application"],
-        "css": ["style.css"],
-        "js": ["content.js"]
-    }],
-    "description": "Extension to facilitate viewing of blipchat at night",
-    "permissions": ["storage"]
+    "background": {
+        "scripts": [
+            "popup.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_title": "Dark Blip",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "https://*//*",
+        "http://*//*",
+        "tabs"
+    ]
 
 }

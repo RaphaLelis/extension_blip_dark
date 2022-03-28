@@ -2,18 +2,25 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Mode</title>
-    <script src="content.js"></script>
-    <img id="icon" src="https://arquivos-lelis.s3.us-east-2.amazonaws.com/img/icon-removebg-preview.png">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-    <input id="texto" type="text">
-    <button id="btn">Dark</button>
-    <div id="result"></div>
-
-
+<body class="popup">
+    <h1><span class="black">Dark Mode - BlipChat</span></h1>
+    <p>Bored of looking at websites the same way? Meet Dark blip, a chrome extension that can change your blichat from dark mood to light mode and vice versa! :)</p>
+    <div class="button">
+        <div class="row">On</div>
+        <div class="row">Off</div>
+        <div class="circle"></div>
+    </div>
 </body>
+<script src="./popup.js">
+</script>
 
 </html>
