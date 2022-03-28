@@ -4,7 +4,7 @@
     "version": "0.1",
     "description": "Extension to facilitate viewing of blipchat at night",
     "icons": {
-        "128": "img/icondark.png"
+        "128": "img/icon.png"
     },
     "background": {
         "scripts": [
